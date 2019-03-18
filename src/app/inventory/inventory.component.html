@@ -1,0 +1,5 @@
+<h3 class="text-center">Inventory</h3>
+<app-inventory-item
+  *ngFor="let inventoryEl of inventory; let i =index"
+  [item]="inventoryEl"
+  (itemSelected)="onItemSelected(inventoryEl, i)"></app-inventory-item>
